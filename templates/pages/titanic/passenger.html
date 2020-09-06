@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<header class="py-4 mb-4">
+  <h1>{{passenger["Name"]}} さん</h1>
+</header>
+
+{% include "partials/passenger-table.html" %}
+{% endblock %}

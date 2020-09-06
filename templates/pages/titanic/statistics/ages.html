@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header class="py-4 mb-4">
+  <h1>年齢の統計</h1>
+</header>
+
+<section>
+  <table class="table">
+    <tbody>
+    <tr>
+      <th>最低年齢</th>
+      <td>{{statistics.min}} 歳</td>
+    </tr>
+      <tr>
+        <th>最高年齢</th>
+        <td>{{statistics.max}} 歳</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Passenger Id</th>
+        <th>Name</th>
+        <th>Sex</th>
+        <th>Ticket</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</section>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% if passenger %}
+  <table class="table">
+    <tbody>
+      <tr>
+        <th>PassengerId</th>
+        <td>{{ passenger["PassengerId"] }}</td>
+      </tr>
+      <tr>
+        <th>Survived</th>
+        <td>{{ "Yes" if passenger["Survived"] == 1 else "No" }}</td>
+      </tr>
+      <tr>
+        <th>Pclass</th>
+        <td>{{ passenger["Pclass"] }}</td>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <td>{{ passenger["Name"] }}</td>
+      </tr>
+      <tr>
+        <th>Sex</th>
+        <td>{{ passenger["Sex"] }}</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>{{ passenger["Age"] }}</td>
+      </tr>
+      <tr>
+        <th>SibSp</th>
+        <td>{{ passenger["SibSp"] }}</td>
+      </tr>
+      <tr>
+        <th>Parch</th>
+        <td>{{ passenger["Parch"] }}</td>
+      </tr>
+      <tr>
+        <th>Ticket</th>
+        <td>{{ passenger["Ticket"] }}</td>
+      </tr>
+      <tr>
+        <th>Fare</th>
+        <td>{{ passenger["Fare"] }}</td>
+      </tr>
+      <tr>
+        <th>Cabin</th>
+        <td>{{ passenger["Cabin"] }}</td>
+      </tr>
+      <tr>
+        <th>Embarked</th>
+        <td>{{ passenger["Embarked"] }}</td>
+      </tr>
+    </tbody>
+  </table>
+{% else %}
+  <p>該当する乗客がいません。</p>
+{% endif %}

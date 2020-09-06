@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header class="py-4 mb-4">
+  <h1>{{title}}</h1>
+</header>
+
+<section class="row">
+  <div class="col col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">乗客</h5>
+        <p class="card-text">乗客の情報</p>
+        <a href="/titanic/passengers" class="btn btn-primary">乗客を表示</a>
+      </div>
+    </div>
+  </div>
+  <div class="col col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">年齢の統計</h5>
+        <p class="card-text">年齢の統計</p>
+        <a href="/titanic/statisitics/ages" class="btn btn-primary">年齢の統計を表示</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

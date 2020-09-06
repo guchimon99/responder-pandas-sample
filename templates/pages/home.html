@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <section class="mb-4">
+    <h1>{{title}}</h1>
+  </section>
+
+  <section class="border-bottom py-4 mb-4">
+    <h2>タイタニック</h2>
+    <p>タイタニック号の乗客に関するデータ</p>
+    <div class="text-right">
+      <a class="btn btn-primary" href="/titanic">表示</a>
+    </div>
+  </section>
+
+  <section class="border-bottom py-4 mb-4">
+    <h2>大気</h2>
+    <p>各都市の大気の状態に関するデータ</p>
+    <div class="text-right">
+      <a class="btn btn-primary" href="/air_quality">表示</a>
+    </div>
+  </section>
+{% endblock %}

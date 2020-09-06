@@ -1,0 +1,30 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>PassengerId</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Ticket</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for passenger in passengers %}
+    <tr>
+      <td>
+        <a href="/titanic/passengers/{{ passenger['PassengerId'] }}">
+          <i class="fa fa-link"></i>
+          #{{ passenger["PassengerId"] }}
+        </a>
+      </td>
+      <td>{{ passenger["Pclass"] }}</td>
+      <td>{{ passenger["Name"] }}</td>
+      <td>{{ passenger["Sex"] }}</td>
+      <td>{{ passenger["Age"] }}</td>
+      <td>{{ passenger["Ticket"] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
